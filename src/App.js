@@ -10,7 +10,7 @@ export default function InventoryPredictor() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://192.168.99.100:8082/api/products"); // Update your API URL
+        const response = await fetch("https://laravel-backend-production-f902.up.railway.app/api/products"); // Update your API URL
         const data = await response.json();
         setProducts(data);
       } catch (error) {
