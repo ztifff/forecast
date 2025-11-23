@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+📦 Inventory Reorder Prediction Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A lightweight web application that predicts inventory reorder needs using TensorFlow.js.
+This tool helps small businesses and store owners anticipate low-stock situations and prevent supply shortages through simple forecasting.
 
-## Available Scripts
+🔗 Live Demo: https://forecast-ufkp11l78-ztifffs-projects.vercel.app/
 
-In the project directory, you can run:
+🔗 GitHub Repo: https://github.com/ztifff/forecast
 
-### `npm start`
+🚀 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Inventory Reorder Prediction Dashboard analyzes historical inventory movement and predicts future stock levels to help determine when you should reorder items.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project is built using:
 
-### `npm test`
+React.js — UI and component logic
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+TensorFlow.js — machine learning forecasting
 
-### `npm run build`
+Vercel — hosting and deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bootstrap + Custom CSS — interface styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The system is intentionally simple for beginners and small business owners who need fast, easy insights without complex dashboards.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📊 Features
+✅ Machine Learning Forecast
 
-### `npm run eject`
+Uses TensorFlow.js to predict future inventory consumption
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Simple model suitable for lightweight real-time predictions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✅ Interactive Input
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Enter past inventory data
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Choose days to forecast
 
-## Learn More
+Instantly see predicted reorder levels
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+✅ Modern UI
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clean dashboard layout
 
-### Code Splitting
+Fully responsive
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Light & fast
 
-### Analyzing the Bundle Size
+✅ Zero Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Entirely client-side
 
-### Making a Progressive Web App
+Runs directly in the browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🛠️ Technologies Used
+Technology	Use
+React.js	Main framework
+TensorFlow.js	Forecasting model
+Bootstrap 5	UI styling
+Vercel	Deployment platform
+JavaScript (ES6+)	App logic
+📥 Installation & Setup
 
-### Advanced Configuration
+Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+git clone https://github.com/ztifff/forecast.git
+cd forecast
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Install dependencies:
 
-### `npm run build` fails to minify
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Start development server:
+
+npm start
+
+
+Build for production:
+
+npm run build
+
+
+Deploy to Vercel:
+
+vercel
+
+📁 Project Structure
+src/
+│── components/
+│   └── InventoryPredictor.js
+│── data/
+│── App.js
+│── index.js
+│── styles/
+│   └── global.css
+public/
+README.md
+
+🤖 Forecasting Approach
+
+The app uses a simple TensorFlow sequential model:
+
+Normalizes the input data
+
+Trains a small dense neural network
+
+Predicts future stock movement
+
+Displays results on-screen
+
+This model is intentionally minimal to ensure fast browser performance.
+
+📌 Future Improvements (Planned)
+
+Export forecast data to CSV
+
+Add charts (Recharts / Chart.js)
+
+Save inventory history in localStorage
+
+Multi-item prediction support
+
+Improved ML model for accuracy
